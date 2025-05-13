@@ -2,9 +2,9 @@ package com.mo.assetManager;
 
 public class Asset {
 
-    private final String description;
-    private final String dateAcquired;
-    private final double originalCost;
+    private String description;
+    private String dateAcquired;
+    private double originalCost;
 
     public Asset(String description, String dateAcquired, double originalCost) {
         this.description = description;
@@ -16,12 +16,28 @@ public class Asset {
         return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getDateAcquired() {
         return dateAcquired;
     }
 
+    public void setDateAcquired(String dateAcquired) {
+        this.dateAcquired = dateAcquired;
+    }
+
     public double getOriginalCost() {
         return originalCost;
+    }
+
+    public void setOriginalCost(double originalCost) {
+        this.originalCost = originalCost;
+    }
+
+    public double getValue(){
+        return getOriginalCost();
     }
 
 
