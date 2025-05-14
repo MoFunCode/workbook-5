@@ -1,6 +1,6 @@
 package com.mo.assetManager;
 
-abstract class Asset {
+public class Asset {
 
     private String description;
     private String dateAcquired;
@@ -36,7 +36,9 @@ abstract class Asset {
         this.originalCost = originalCost;
     }
 
-    public abstract double getValue();
+    public double getValue(){
+        return getOriginalCost();
+    }
 
 
 }

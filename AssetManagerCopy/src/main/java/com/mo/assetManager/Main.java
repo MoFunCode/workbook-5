@@ -3,8 +3,8 @@ package com.mo.assetManager;
 import java.util.ArrayList;
 
 public class Main {
-
     public static void main(String[] args) {
+
 
         ArrayList<Asset> assets = new ArrayList<>();
 
@@ -20,7 +20,6 @@ public class Main {
 
         assets.add(new Vehicle("Truck", "2015-11-05", 100000,
                 "Ram 1500 TRX", 2024, 145000));
-        assets.add(new Cash("Summer Travel Funds", "2025-01-01", 3000));
 
         for (Asset asset : assets) {
             System.out.println("\nDescription: " + asset.getDescription());
@@ -35,10 +34,6 @@ public class Main {
                 System.out.println("Type: Vehicle");
                 System.out.println("Make/Model: " + vehicle.getMakeModel());
                 System.out.println("Year: " + vehicle.getYear());
-            } else if (asset instanceof Cash) {
-                System.out.println("Type: Cash");
-                System.out.println("Wooooooohooooo");
-
             }
         }
     }
