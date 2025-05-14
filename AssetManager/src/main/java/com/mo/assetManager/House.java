@@ -18,12 +18,12 @@ public class House extends Asset {
     @Override
     public double getValue() {
         double pricePerSqrFt = switch(condition) {
-            case 1 -> 180.00; // excellent
-            case 2 -> 190.00; // good (corrected from 130.00)
-            case 3 -> 90.00;  // fair
-            case 4 -> 80.00;  // poor
+            case 1 -> 180.00;
+            case 2 -> 190.00;
+            case 3 -> 90.00;
+            case 4 -> 80.00;
             default -> {
-                System.out.println("Warning: Invalid condition (" + condition + "). Defaulting to poor rate.");
+                System.out.println("Ayooooo that an Invalid condition " + condition + ". Defaulting to poor rate.");
                 yield 80.00;
             }
         };
